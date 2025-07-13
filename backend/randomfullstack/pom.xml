@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.caffeinateddev</groupId>
-	<artifactId>learningtracker</artifactId>
+	<artifactId>randomfullstack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>learningtracker</name>
-	<description>Learning Tracker project for Spring Boot</description>
+	<name>randomfullstack</name>
+	<description>Full Stack project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>

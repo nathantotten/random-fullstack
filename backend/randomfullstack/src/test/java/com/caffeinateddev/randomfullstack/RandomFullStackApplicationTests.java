@@ -1,10 +1,10 @@
-package com.caffeinateddev.learningtracker;
+package com.caffeinateddev.randomfullstack;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LearningtrackerApplicationTests {
+class RandomFullStackApplicationTests {
 
 	@Test
 	void contextLoads() {

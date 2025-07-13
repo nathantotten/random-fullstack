@@ -1,13 +1,13 @@
-package com.caffeinateddev.learningtracker;
+package com.caffeinateddev.randomfullstack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LearningtrackerApplication {
+public class RandomFullStackApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LearningtrackerApplication.class, args);
+		SpringApplication.run(RandomFullStackApplication.class, args);
 	}
 
 }
