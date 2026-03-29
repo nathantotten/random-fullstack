@@ -1,3 +1,3 @@
-module github.com/nathantotten/random-full-stack/backend
+module github.com/nathantotten/random-fullstack/backend
 
 go 1.26.1
