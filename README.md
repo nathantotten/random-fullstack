@@ -72,7 +72,7 @@ The backend is a Go application that communicates with a PostgreSQL database.
 
    ```bash
    git clone <repository-url>
-   cd backend
+   cd random-fullstack/backend
    ```
 
 3. **Configure PostgreSQL**:
