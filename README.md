@@ -1,15 +1,15 @@
-# Full Stack App (Vue + TS + Vite Frontend, Spring + PostgreSQL Backend)
+# Full Stack App (Vue + TS + Vite Frontend, Go Backend)
 
 This project is a simple full-stack application built for random tinkering, experimentation, and learning purposes. It consists of two main parts:
 
 1. **Frontend**: A Vue 3 application powered by TypeScript and Vite for fast development.
-2. **Backend**: A Spring Boot application with PostgreSQL as the database.
+2. **Backend**: A Go application using a PostgreSQL database.
 
 ---
 
 ## Table of Contents
 
-- [Full Stack App (Vue + TS + Vite Frontend, Spring + PostgreSQL Backend)](#full-stack-app-vue--ts--vite-frontend-spring--postgresql-backend)
+- [Full Stack App (Vue + TS + Vite Frontend, Go Backend)](#full-stack-app-vue--ts--vite-frontend-go-backend)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Frontend Setup](#frontend-setup)
@@ -24,12 +24,12 @@ This project is a simple full-stack application built for random tinkering, expe
 
 ## Overview
 
-This project serves as a playground for experimenting with new technologies and features. It combines a modern frontend with Vue 3, TypeScript, and Vite, alongside a robust backend powered by Spring Boot and PostgreSQL.
+This project serves as a playground for experimenting with new technologies and features. It combines a modern frontend with Vue 3, TypeScript, and Vite, alongside a robust backend powered by Go and PostgreSQL.
 
 You can use this repository to explore the following:
 
 * Vue 3 with TypeScript for building dynamic and reactive user interfaces.
-* Spring Boot for building RESTful APIs and handling business logic.
+* Go for building RESTful APIs and handling business logic.
 * PostgreSQL for managing relational data.
 
 ---
@@ -60,27 +60,38 @@ The frontend is built using Vue 3 and TypeScript. The project is scaffolded with
 
 ## Backend Setup
 
-The backend is a Spring Boot application that communicates with a PostgreSQL database.
+The backend is a Go application that communicates with a PostgreSQL database.
 
 ### Steps to Set Up the Backend
 
-1. **Install Java and Maven**:
-   Make sure you have [Java](https://adoptopenjdk.net/) and [Maven](https://maven.apache.org/) installed.
+1. **Install Go**:
+   Make sure you have [Go](https://go.dev/dl/) installed.
 
-2. **Configure PostgreSQL**:
-   Make sure PostgreSQL is installed and running. You will need to configure your database credentials in the `application.properties` file (located in `backend/src/main/resources/`):
-
-   ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/mydb
-   spring.datasource.username=your-username
-   spring.datasource.password=your-password
-   ```
-
-3. **Run the Spring Boot Application**:
-   To start the backend, run the following command in the `backend/` directory:
+2. **Clone the Repository**:
+   Clone this repository and navigate to the `backend/` directory:
 
    ```bash
-   ./mvnw spring-boot:run
+   git clone <repository-url>
+   cd backend
+   ```
+
+3. **Configure PostgreSQL**:
+   Ensure PostgreSQL is installed and running. You will need to configure your database credentials in the `config.yaml` file:
+
+   ```yaml
+   database:
+     host: localhost
+     port: 5432
+     user: your-username
+     password: your-password
+     name: mydb
+   ```
+
+4. **Run the Go Application**:
+   To start the backend, run the following command:
+
+   ```bash
+   go run main.go
    ```
 
    The backend will be available at [http://localhost:8080](http://localhost:8080).
@@ -91,7 +102,7 @@ The backend is a Spring Boot application that communicates with a PostgreSQL dat
 
 With both the frontend and backend running, you can visit the app in your browser.
 
-1. Start the backend by running the Spring Boot application (`./mvnw spring-boot:run`).
+1. Start the backend by running the Go application (`go run main.go`).
 2. Start the frontend development server (`pnpm dev`).
 
 ---
@@ -105,7 +116,7 @@ With both the frontend and backend running, you can visit the app in your browse
   * Vite (for fast development)
 * **Backend**:
 
-  * Spring Boot
+  * Go
   * PostgreSQL
 
 ---
