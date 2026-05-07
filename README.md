@@ -44,6 +44,7 @@ The frontend is built using Vue 3 and TypeScript. The project is scaffolded with
    Make sure you have [pnpm](https://pnpm.io/) installed, then install the dependencies:
 
    ```bash
+   cd frontend
    pnpm install
    ```
 
@@ -51,6 +52,7 @@ The frontend is built using Vue 3 and TypeScript. The project is scaffolded with
    To start the frontend development server, run:
 
    ```bash
+   cd frontend
    pnpm dev
    ```
 
@@ -71,10 +73,10 @@ The backend is a Go application that communicates with a PostgreSQL database.
    Make sure PostgreSQL is installed and running. You will need to configure your database credentials in the application code or environment variables.
 
 3. **Run the Go Application**:
-   To start the backend, run the following command in the `backend/` directory:
+   To start the backend, run the following command:
 
    ```bash
-   go run cmd/api/main.go
+   go run backend/cmd/api/main.go
    ```
 
    The backend will be available at [http://localhost:8080](http://localhost:8080).
@@ -85,8 +87,8 @@ The backend is a Go application that communicates with a PostgreSQL database.
 
 With both the frontend and backend running, you can visit the app in your browser.
 
-1. Start the backend by running the Go application (`go run cmd/api/main.go`).
-2. Start the frontend development server (`pnpm dev`).
+1. Start the backend by running the Go application (`go run backend/cmd/api/main.go`).
+2. Start the frontend development server (`cd frontend && pnpm dev`).
 
 ---
 
